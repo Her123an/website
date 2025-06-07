@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rang Real Estate | Premium Office Spaces in Addis Ababa</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Premium commercial office rentals on Bole Road, Addis Ababa. Modern office space ideal for NGOs, corporations, and professionals seeking premium location." />
+  <meta name="keywords"
+    content="RANG Real Estate, Addis Ababa Office Space, Bole Road Commercial, Ethiopia Office Rentals, NGO Office, Corporate Space" />
+  <meta name="author" content="RANG Real Estate" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rang Real Estate | Premium Office Spaces in Addis Ababa" />
+  <meta property="og:description"
+    content="Premium commercial office rentals on Bole Road, Addis Ababa. Perfect for corporations, NGOs, and professionals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/home.html" />
+  <meta property="og:image" content="https://yourdomain.com/image/office-building.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rang Real Estate | Premium Office Spaces in Addis Ababa" />
+  <meta name="twitter:description"
+    content="Discover premium office space for rent on Bole Road, Addis Ababa – modern, spacious, and professional." />
+  <meta name="twitter:image" content="https://yourdomain.com/image/office-building.jpg" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+
+  <!-- Header with Logo -->
+<header class="bg-white py-4 shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-12">
+
+    <!-- Left: Logo (same on mobile & desktop) -->
+    <img src="image/RANG Real Estate logo.png" alt="RANG Logo" class="h-12 md:h-16" />
+
+    <!-- Center: Title & Subtitle -->
+    <div class="text-center flex-1 md:ml-6">
+      <h1 class="text-2xl md:text-4xl font-bold text-[#D47C69] leading-snug">RANG Real Estate</h1>
+      <p class="text-sm md:text-lg text-gray-600">Premium Office Spaces on Bole Road, Addis Ababa</p>
+    </div>
+
+    <!-- Right: Hamburger Menu on mobile -->
+    <button id="navToggle" class="md:hidden text-3xl text-[#D47C69] ml-4 focus:outline-none">
+      ☰
+    </button>
+  </div>
+</header>
+
+
+  <!-- Responsive Navigation -->
+ <nav class="bg-[#DDE9F2] shadow-sm">
+    <ul id="navMenu"
+      class="hidden md:flex md:items-center md:justify-center space-y-4 md:space-y-0 md:space-x-12 py-4 px-6 md:px-12 text-gray-700 font-semibold text-base md:text-lg flex-col md:flex-row">
+      <li><a href="index.html" class="hover:text-[#D47C69] transition duration-300">Home</a></li>
+      <li><a href="our property.html" class="hover:text-[#D47C69] transition duration-300">Our Property</a></li>
+      <li><a href="available space.html" class="hover:text-[#D47C69] transition duration-300">Available Space</a></li>
+      <li><a href="futureproject.html" class="hover:text-[#D47C69] transition duration-300">Future Projects</a></li>
+      <li><a href="contact.html" class="hover:text-[#D47C69] transition duration-300">Contact</a></li>
+    </ul>
+  </nav>
+
+ <!-- Available Rental Space -->
+<section id="available" class="bg-orange-50 py-20 px-8 max-w-7xl mx-auto rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-12 mt-12">
+  <!-- Text -->
+  <div class="md:w-1/3 bg-white p-10 rounded-lg shadow-lg border-l-8 border-orange-600">
+    <h2 class="text-4xl font-extrabold text-orange-600 mb-8 flex items-center gap-3">
+      📢 Available Rental Space
+    </h2>
+    <p class="text-xl font-semibold text-gray-900 mb-6">Now Leasing: 1 Full Office Floor</p>
+    <ul class="list-disc list-inside text-gray-800 space-y-5 mb-8 text-lg">
+      <li><strong>Size:</strong> 720 sqm (unpartitioned)</li>
+      <li><strong>Location:</strong> Prime spot on Bole Road, Addis Ababa</li>
+      <li><strong>Ideal For:</strong> Corporations, financial institutions, NGOs, consultancy firms</li>
+      <li><strong>Building Features:</strong> Elevator access, reliable utilities, iconic coffee shop on ground floor</li>
+    </ul>
+    <a href="#contact" class="inline-block bg-orange-600 text-white font-bold px-8 py-4 rounded shadow-lg hover:bg-orange-700 transition">
+      📞 Contact Us to Inquire
+    </a>
+  </div>
+
+  <!-- Image (wider and more dominant) -->
+  <div class="md:w-2/3 relative">
+    <img id="rentalImage" src="image/IMG_0690.jpg" alt="Rental Space"
+         class="rounded-lg shadow-lg object-cover w-full h-[32rem] transition-opacity duration-1000 ease-in-out opacity-100" />
+  </div>
+
+  <!-- CLOSE THIS SECTION: It was left open -->
+  </section>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = [
+      "image/IMG_0685.JPG",
+      "image/IMG_0689.jpg",
+      "image/IMG_0678.jpg",
+      "image/IMG_0677.jpg",
+      "image/IMG_0690.jpg"
+    ];
+
+    // Preload all images
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    let index = 0;
+    const imgElement = document.getElementById("rentalImage");
+
+    setInterval(() => {
+      imgElement.classList.remove("opacity-100");
+      imgElement.classList.add("opacity-0");
+
+      setTimeout(() => {
+        index = (index + 1) % images.length;
+        imgElement.src = images[index];
+        imgElement.classList.remove("opacity-0");
+        imgElement.classList.add("opacity-100");
+      }, 500);
+    }, 4000);
+  });
+</script>
+
+
+  <!-- NOW this contact section is safe and visible -->
+  <section id="contact" class="bg-gray-100 py-20 px-8 max-w-4xl mx-auto rounded-lg shadow-lg mt-16">
+
+    <h2 class="text-4xl font-extrabold text-gray-900 mb-10 border-b-4 border-orange-500 pb-3 text-center">
+      Contact Us
+    </h2>
+    <p class="text-gray-700 text-lg mb-10 max-w-xl mx-auto text-center">
+      Reach out to us for inquiries, leasing details, or partnership opportunities. We’re here to help you find the perfect space for your business.
+    </p>
+    <form action="contact.php" method="POST" class="space-y-4 bg-white p-8 rounded shadow-md max-w-lg mx-auto border border-orange-200">
+      <input type="hidden" name="subject" value="Inquiry from Rang Real Estate Contact Section">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+      <textarea name="message" placeholder="Your Message" required class="w-full border border-gray-300 p-3 rounded-md h-28 resize-none focus:outline-none focus:ring-2 focus:ring-orange-400"></textarea>
+      <button type="submit" class="w-full bg-orange-600 text-white font-semibold py-3 rounded hover:bg-orange-700 transition">
+        Send Message
+      </button>
+    </form>
+    <div class="mt-10 space-y-2 text-center text-gray-700 text-lg">
+      <p><strong>RANG Real Estate</strong></p>
+      <p>Bole Road, Addis Ababa, Ethiopia</p>
+      <p>📞 +251911218607/0923667585/0980160191</p>
+      <p>✉️ info@rang-realestate.com</p>
+      <p>Office Hours: Mon–Fri | 9:00 AM – 5:00 PM</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#FAF5F1] text-gray-600 text-center py-6 mt-12 border-t border-gray-300">
+    <p class="text-sm">&copy; 2025 RANG Real Estate. All rights reserved.</p>
+  </footer>
+
+   <!-- Toggle Script -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

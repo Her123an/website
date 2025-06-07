@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rang Real Estate | Premium Office Spaces in Addis Ababa</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Premium commercial office rentals on Bole Road, Addis Ababa. Modern office space ideal for NGOs, corporations, and professionals seeking premium location." />
+  <meta name="keywords"
+    content="RANG Real Estate, Addis Ababa Office Space, Bole Road Commercial, Ethiopia Office Rentals, NGO Office, Corporate Space" />
+  <meta name="author" content="RANG Real Estate" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rang Real Estate | Premium Office Spaces in Addis Ababa" />
+  <meta property="og:description"
+    content="Premium commercial office rentals on Bole Road, Addis Ababa. Perfect for corporations, NGOs, and professionals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/home.html" />
+  <meta property="og:image" content="https://yourdomain.com/image/office-building.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rang Real Estate | Premium Office Spaces in Addis Ababa" />
+  <meta name="twitter:description"
+    content="Discover premium office space for rent on Bole Road, Addis Ababa – modern, spacious, and professional." />
+  <meta name="twitter:image" content="https://yourdomain.com/image/office-building.jpg" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+
+  <!-- Header with Logo -->
+<header class="bg-white py-4 shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-12">
+
+    <!-- Left: Logo (same on mobile & desktop) -->
+    <img src="image/RANG Real Estate logo.png" alt="RANG Logo" class="h-12 md:h-16" />
+
+    <!-- Center: Title & Subtitle -->
+    <div class="text-center flex-1 md:ml-6">
+      <h1 class="text-2xl md:text-4xl font-bold text-[#D47C69] leading-snug">RANG Real Estate</h1>
+      <p class="text-sm md:text-lg text-gray-600">Premium Office Spaces on Bole Road, Addis Ababa</p>
+    </div>
+
+    <!-- Right: Hamburger Menu on mobile -->
+    <button id="navToggle" class="md:hidden text-3xl text-[#D47C69] ml-4 focus:outline-none">
+      ☰
+    </button>
+  </div>
+</header>
+
+
+  <!-- Responsive Navigation -->
+  <nav class="bg-[#DDE9F2] shadow-sm">
+    <ul id="navMenu"
+      class="hidden md:flex md:items-center md:justify-center space-y-4 md:space-y-0 md:space-x-12 py-4 px-6 md:px-12 text-gray-700 font-semibold text-base md:text-lg flex-col md:flex-row">
+      <li><a href="index.html" class="hover:text-[#D47C69] transition duration-300">Home</a></li>
+      <li><a href="our property.html" class="hover:text-[#D47C69] transition duration-300">Our Property</a></li>
+      <li><a href="available space.html" class="hover:text-[#D47C69] transition duration-300">Available Space</a></li>
+      <li><a href="futureproject.html" class="hover:text-[#D47C69] transition duration-300">Future Projects</a></li>
+      <li><a href="contact.html" class="hover:text-[#D47C69] transition duration-300">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="rounded-xl overflow-hidden shadow-lg">
+      <img src="image/IMG_0546.jpg" alt="RANG Real Estate Office Tower"
+        class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="eager" />
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold mb-6 text-[#D47C69]">Our Landmark Office Tower</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-4 text-lg">
+        <li><strong>16 floors + basement</strong> – Dedicated commercial office use</li>
+        <li><strong>Prime Location</strong> – Iconic Bole Road, Addis Ababa</li>
+        <li><strong>Landmark Tenant</strong> – Features one of Addis’s oldest coffee shops on ground floor</li>
+        <li><strong>Smart Layout</strong> – Flexible floor plans with natural lighting and modern finishes</li>
+        <li><strong>Business-ready</strong> – Secure access, elevator, and reliable infrastructure</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="bg-gray-100 py-12 px-6 max-w-7xl mx-auto rounded-lg mt-12 shadow-md">
+    <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Explore Our Spaces</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <img
+        src="image/IMG_0701.jpg"
+        loading="lazy"
+        alt="Office Entrance"
+        class="rounded shadow cursor-pointer transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+        onclick="openModal(this.src, this.alt)"
+      />
+      <img
+        src="image/IMG_0721_2.jpg"
+        loading="lazy"
+        alt="Lobby"
+        class="rounded shadow cursor-pointer transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+        onclick="openModal(this.src, this.alt)"
+      />
+      <img
+        src="image/IMG_0737.jpg"
+        loading="lazy"
+        alt="Reception Area"
+        class="rounded shadow cursor-pointer transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+        onclick="openModal(this.src, this.alt)"
+      />
+      <img
+        src="image/IMG_0575.jpg"
+        loading="lazy"
+        alt="Parking"
+        class="rounded shadow cursor-pointer transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+        onclick="openModal(this.src, this.alt)"
+      />
+      <img
+        src="image/IMG_0619.jpg"
+        loading="lazy"
+        alt="Office Interior"
+        class="rounded shadow cursor-pointer transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+        onclick="openModal(this.src, this.alt)"
+      />
+      <img
+        src="image/IMG_0611.jpg"
+        loading="lazy"
+        alt="Workspaces"
+        class="rounded shadow cursor-pointer transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+        onclick="openModal(this.src, this.alt)"
+      />
+    </div>
+  </section>
+
+  <!-- Modal (hidden by default) -->
+  <div
+    id="imageModal"
+    class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden z-50"
+    onclick="closeModal()"
+  >
+    <div class="relative max-w-4xl max-h-full">
+      <img id="modalImg" src="" alt="" class="rounded shadow-lg max-w-full max-h-[80vh]" />
+      <p id="modalCaption" class="text-white text-center mt-4 text-lg"></p>
+      <button
+        class="absolute top-2 right-2 text-white text-3xl font-bold hover:text-[#D47C69]"
+        onclick="closeModal(event)"
+        aria-label="Close Image Modal"
+      >
+        &times;
+      </button>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <footer class="bg-[#FAF5F1] text-gray-600 text-center py-6 mt-12 border-t border-gray-300">
+    <p class="text-sm">&copy; 2025 RANG Real Estate. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Modal Script -->
+  <script>
+    function openModal(src, alt) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImg');
+      const modalCaption = document.getElementById('modalCaption');
+
+      modal.style.display = 'flex';
+      modalImg.src = src;
+      modalImg.alt = alt;
+      modalCaption.textContent = alt;
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    }
+
+    function closeModal(event) {
+      if (event) event.stopPropagation();
+      const modal = document.getElementById('imageModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+   <!-- Toggle Script -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
